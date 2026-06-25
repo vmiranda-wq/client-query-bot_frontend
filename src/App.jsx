@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom'
 import ChatSimulator from './pages/ChatSimulator'
 import AdminDashboard from './pages/AdminDashboard'
+import ChatWidget from './components/ChatWidget/ChatWidget'
 
 function Navigation() {
   const location = useLocation()
@@ -55,6 +56,7 @@ function App() {
             <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </div>
+        <ChatWidget />
       </div>
     </BrowserRouter>
   )
